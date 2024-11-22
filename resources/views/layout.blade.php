@@ -32,7 +32,7 @@
         </div>
       </header>
 
-      <div class=" bg-yellow-200 flex justify-center">
+      <div class=" bg-gradient-to-br from-cyan-300 to-yellow-300 flex justify-center">
         <div class="w-11/12">
             @yield('content')
         </div>

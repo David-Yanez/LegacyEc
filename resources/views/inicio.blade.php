@@ -2,15 +2,20 @@
 @extends('layout')
 
 @section('content')
-    <div class=" flex mt-14 bg-slate-500">
-        <div class=" flex flex-col gap-4">
-            <h1 class=" text-4xl text-center">Productos Naturales Legacy</h1>
+    <div class=" flex flex-col md:flex-row  bg-[#D7FEFB]">
+        <div class=" flex flex-col gap-4 items-center">
+            <h1 class=" md:mt-14 mt-8 md:text-6xl text-2xl font-bold text-center">Productos Naturales Legacy</h1>
     
-            <p>Legacy te ofrece una variedad de bebidas naturales para cuidar tu cuerpo desde adentro. Nuestras bebidas naturales con colágeno, energía y fórmulas digestivas te ayudarán a alcanzar tus objetivos.</p>
-                <button class=" bg-yellow-200">Contactar</button>
+            <p class=" md:w-4/6 w-5/6  md:text-xl  ml-8 md:mt-20 mt-4">Legacy te ofrece una variedad de bebidas naturales para cuidar tu cuerpo desde adentro. Nuestras bebidas naturales con colágeno, energía y fórmulas digestivas te ayudarán a alcanzar tus objetivos.</p>
+            <button
+              class="cursor-pointer w-40  md:mt-20 mt-8 bg-violet-500 rounded-md text-white font-semibold transition duration-300 ease-in-out hover:bg-violet-700 hover:ring-2 hover:ring-violet-800 hover:shadow-xl hover:shadow-violet-500 focus:ring-violet-300 focus:shadow-violet-400 px-5 py-2"
+            >
+              Button
+            </button>
+
         </div>
-        <figure>
-            <img src="/img/productosLegacy.webp" alt="banerLegacy">
+        <figure class="flex justify-center">
+            <img class="md:w-[1600px] w-64 p-2 mt-4" src="/img/productosLegacy1.webp" alt="banerLegacy">
         </figure>
     </div>
     <section>
@@ -22,7 +27,7 @@
 
     <article>
         <p>¡Sé un líder en la industria! Únete a nuestro equipo Legacy.</p>
-        <button>Información</button>
+        <button>Informaciócn</button>
         <figure>
             <img src="/img/centroDistribucion.webp" alt="">
         </figure>
