@@ -4,7 +4,7 @@
 @section('content')
     <div class=" flex flex-col md:flex-row  bg-[#D7FEFB]">
         <div class=" flex flex-col gap-4 items-center">
-            <h1 class=" md:mt-14 mt-8 md:text-6xl text-2xl font-bold text-center">Productos Naturales Legacy</h1>
+            <h1 class=" md:mt-14 mt-8 md:text-6xl text-3xl font-bold text-center">Productos Naturales Legacy</h1>
     
             <p class=" md:w-4/6 w-5/6  md:text-xl  ml-8 md:mt-20 mt-4">Legacy te ofrece una variedad de bebidas naturales para cuidar tu cuerpo desde adentro. Nuestras bebidas naturales con colágeno, energía y fórmulas digestivas te ayudarán a alcanzar tus objetivos.</p>
             <button
@@ -19,26 +19,34 @@
         </figure>
     </div>
     <section>
-        <h2 class=" text-2xl text-center">Todos nuestros productos</h2>
+        <h2 class=" text-3xl text-center font-bold mt-8">Todos nuestros productos</h2>
         <div>
 
         </div>
     </section>
 
-    <article>
-        <p>¡Sé un líder en la industria! Únete a nuestro equipo Legacy.</p>
-        <button>Informaciócn</button>
+    <article class="flex flex-row mt-10">
+      <div class="flex flex-col items-center justify-center">
+        <p class="md:text-6xl text-xl text-center font-medium">¡Sé un líder en la industria! </p>
+       <p class="md:text-6xl text-xl md:mt-6 mt-4 text-center font-medium">Únete a nuestro equipo Legacy.</p>
+        <button
+        class="cursor-pointer w-40  text-sm md:text-base md:mt-20 mt-8 bg-violet-500 rounded-md text-white font-semibold transition duration-300 ease-in-out hover:bg-violet-700 hover:ring-2 hover:ring-violet-800 hover:shadow-xl hover:shadow-violet-500 focus:ring-violet-300 focus:shadow-violet-400 md:px-5 px-2 py-2"
+      >
+        Información
+      </button>
+      </div>
+       
         <figure>
-            <img src="/img/centroDistribucion.webp" alt="">
+            <img class="md:w-[600px] rounded-3xl ml-3 md:ml-0 " src="/img/centroDistribucion.webp" alt="Imagen distribucion">
         </figure>
     </article>
 
    
-        <section>
+        <section class="flex flex-col items-center">
+          <p class="text-3xl text-center my-10 font-semibold">Productos de fácil preparación</p>
             <figure>
-                <img src="/img/usoProduct.webp" alt="">
+                <img class="w-48" src="/img/usoProduct.webp" alt="">
             </figure>
-            <p>Productos de fácil preparación</p>
         </section>
 
     <section class="text-gray-600 body-font">
