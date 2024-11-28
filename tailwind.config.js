@@ -14,6 +14,19 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors:{
+                "primary": "#D7FEFB",
+                "secondary": "#FFC003"
+            },
+            animation:{
+                "loop-scroll": "loop-scroll 30s linear infinite",
+            },
+            keyframes: {
+                "loop-scroll":{
+                    from: {transform: "translateX(0)"},
+                    to: {transform: "translateX(-100%)"},
+                }
+            }
         },
     },
     plugins: [],
