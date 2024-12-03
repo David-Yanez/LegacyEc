@@ -18,7 +18,7 @@
         <div class=" text-lg font-semibold">$50</div>
     </div>
     
-    <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+    <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased h-40 overflow-y-auto">
       Led 2 es una bebida innovadora diseñada para estimular la creatividad y mejorar la concentración. Con su mezcla única de ingredientes naturales, esta bebida está enfocada en ayudar a quienes buscan un impulso mental y físico a lo largo del día. 
     </p>
   </div>
