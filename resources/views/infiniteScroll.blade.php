@@ -70,6 +70,14 @@
     <p class=" text-center">Mejora tu sistema digestivo</p>
 </div>
 
+<div class="  border-gray-200 border shadow-lg shadow-yellow-200 p-4 rounded-3xl ">
+    <p class="text-center text-2xl font-semibold ">ALC</p>
+    <figure>
+        <img class="w-60 max-w-none rounded-3xl my-2 " src="/img/products/alc/alc1.webp" alt="led 2">
+    </figure>
+    <p class=" text-center">El mejor batido nutricional</p>
+</div>
+
 
 </div>
 
@@ -142,6 +150,14 @@
             <img class="w-60 max-w-none rounded-3xl my-2 " src="/img/products/wudtx/wudtx1.webp" alt="led 2">
         </figure>
         <p class=" text-center">Mejora tu sistema digestivo</p>
+    </div>
+    
+    <div class="  border-gray-200 border shadow-lg shadow-yellow-200 p-4 rounded-3xl ">
+        <p class="text-center text-2xl font-semibold ">ALC</p>
+        <figure>
+            <img class="w-60 max-w-none rounded-3xl my-2 " src="/img/products/alc/alc1.webp" alt="led 2">
+        </figure>
+        <p class=" text-center">El mejor batido nutricional</p>
     </div>
     
     
