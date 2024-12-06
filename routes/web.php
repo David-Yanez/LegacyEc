@@ -73,6 +73,6 @@ Route::get('/products', function () {
 })->name('productsPage');
 
 Route::get('/product/{slug}', function ($slug) {
-    $prodcut = $slug;
-    return view('product', ['product' => $prodcut]);
-})->name('product');
+    $product = $slug;
+    return view('productPage', ['product' => $product]);
+})->name('productPage');
