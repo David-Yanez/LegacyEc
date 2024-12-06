@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('inicioPage');
-});
+})->name('inicioPage');
 
 Route::get('/products', function () {
 
@@ -70,9 +70,9 @@ Route::get('/products', function () {
 
 
     return view('productsPage', ['productsDescription' => $productsDescription]);
-});
+})->name('productsPage');
 
-Route::get('/products/{slug}', function ($slug) {
+Route::get('/product/{slug}', function ($slug) {
     $prodcut = $slug;
     return view('product', ['product' => $prodcut]);
-});
+})->name('product');

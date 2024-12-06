@@ -6,8 +6,8 @@
         </figure>
       </a>
       <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center p-6 text-base justify-center">
-        <a class="mr-5 hover:text-gray-900">Inicio</a>
-        <a class="mr-5 hover:text-gray-900">Productos</a>
+        <a class="mr-5 hover:text-gray-900" href="{{route('inicioPage')}}">Inicio</a>
+        <a class="mr-5 hover:text-gray-900" href="{{route('productsPage')}}">Productos</a>
         <a class="mr-5 hover:text-gray-900">Nosotros</a>
         
       </nav>
