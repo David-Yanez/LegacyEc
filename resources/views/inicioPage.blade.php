@@ -2,7 +2,7 @@
 @extends('layout')
 
 @section('content')
-    <div class=" flex flex-col md:flex-row  bg-primary">
+    <div class=" flex flex-col md:flex-row  items-center bg-primary">
         <div class=" flex flex-col gap-4 items-center">
             <h1 class=" md:mt-14 mt-8 md:text-6xl text-3xl font-bold text-center">Productos Naturales Legacy</h1>
     
@@ -56,27 +56,27 @@
             <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
               <div class="h-full text-center">
                 <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://dummyimage.com/302x302">
-                <p class="leading-relaxed">“Antes me sentía agotada todo el día. Ahora, con los productos de Legacy, tengo la energía que necesito para hacer frente a mi rutina. ¡Me siento más joven y activa que nunca!”</p>
+                <p class="leading-relaxed">“Antes me sentía agotada todo el día. Ahora, con el producto Led de Legacy, tengo la energía que necesito para hacer frente a mi rutina. ¡Me siento más joven y activa que nunca!”</p>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Carlos Pérez</h2>
+                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Marta Pérez</h2>
               </div>
             </div>
             <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
               <div class="h-full text-center">
                 <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://dummyimage.com/300x300">
-                <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                <p class="leading-relaxed">Desde que empecé a tomar el colageno Avi de Legacy, he notado un cambio increíble en mi piel. Se siente más firme y luminosa. ¡Y mi cabello ha dejado de caerse! Definitivamente, es mi nuevo aliado para lucir radiante.</p>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">ALPER KAMU</h2>
-                <p class="text-gray-500">UI Develeoper</p>
+                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Pablo Ramírez</h2>
+          
               </div>
             </div>
             <div class="lg:w-1/3 lg:mb-0 p-4">
               <div class="h-full text-center">
                 <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="https://dummyimage.com/305x305">
-                <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                <p class="leading-relaxed">"Sufro de problemas digestivos desde hace años. Desde que tomo Wu DTX de Legacy, mi digestión ha mejorado notablemente y mi mente está más clara. ¡Recomiendo Legacy a todos mis conocidos!"</p>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
-                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HENRY LETHAM</h2>
-                <p class="text-gray-500">CTO</p>
+                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Lucía Reveló</h2>
+                
               </div>
             </div>
           </div>

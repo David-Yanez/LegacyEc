@@ -76,3 +76,7 @@ Route::get('/product/{slug}', function ($slug) {
     $product = $slug;
     return view('productPage', ['product' => $product]);
 })->name('productPage');
+
+Route::get('/about', function () {
+    return view('aboutPage');
+})->name('aboutPage');
