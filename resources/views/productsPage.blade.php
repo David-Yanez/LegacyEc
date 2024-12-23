@@ -24,7 +24,7 @@
               </div>
               
               <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased h-40 overflow-y-auto">
-                {{$product['description']}}
+                {{$product['shortdescription']}}
               </p>
             </div>
             <div class="p-6 pt-0 flex gap-14">
