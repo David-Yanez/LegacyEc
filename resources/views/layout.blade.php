@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @vite('resources/css/app.css')
 </head>
-<body>
+<body >
+    <div class="flex justify-center">
+      @include('header')
+    </div>
     
-    @include('header')
     <!-- bg-gradient-to-br from-cyan-300 to-yellow-300-->
-      <div class=" bg-primary  flex justify-center">
-        <div class="w-11/12">
+      <div class="   flex justify-center mt-20">
+        <div class="w-11/12  ">
             @yield('content')
         </div>
         

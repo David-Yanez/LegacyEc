@@ -83,7 +83,7 @@
 
       <!-- Segunda parte  -->
 
-<div class="flex gap-10 mt-14 animate-loop-scroll group-hover:paused" aria-hidden="true">
+<div class="flex gap-10 mt-14 animate-loop-scroll " aria-hidden="true">
 
 
 

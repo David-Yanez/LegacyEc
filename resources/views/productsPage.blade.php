@@ -11,7 +11,7 @@
         <div  >
 
        
-          <div class="relative flex w-80 h-[500px] justify-between  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md hover:scale-105">
+          <div class=" group relative flex w-80 h-[500px] justify-between  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md hover:scale-105">
             <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
             <img class="w-full h-full object-cover object-center" src="/img/products/{{$product->image}}/{{$product->image}}1.webp" alt="">
             </div>
@@ -30,7 +30,7 @@
             <div class="p-6 pt-0 flex gap-14">
              
                 <a href="{{route('productPage', $product->slug )}}">
-                  <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                  <button data-ripple-light="true" type="button" class="select-none opacity-0 group-hover:opacity-100 rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                        Ver mas
                   </button>
                 </a> 

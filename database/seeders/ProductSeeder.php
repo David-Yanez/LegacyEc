@@ -38,7 +38,7 @@ class ProductSeeder extends Seeder
                    "image" => "avi", 
                    "ingredients" => "Colageno Hidrolizado; Camu Camu; Vitamina C Y E", 
                    "benefits" => "Te da energía.; Elimina el estrés.; Mejora la actividad sexual. Quita la migraña y el cansancio.; Aumenta la concentración y memoria.; Mejora la circulación sanguínea.;  Acelera el metabolismo.; Eleva el sistema inmunológico.; Cólicos menstruales.; Elimina quistes, miomas.; Infección urinaria.; Es anticancerígeno.; Protege el corazón.; Limpia los riñones.; Retención de líquido.; Desinflama la próstata.; Protege el sistema nervioso central.; Fortalece los pulmones.; Asma (problemas respiratorios).", 
-                   "cost" => 50.00, 
+                   "cost" => 50.00,                    
                   
                 ], 
           [

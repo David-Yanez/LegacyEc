@@ -1,82 +1,85 @@
 @extends('layout')
 
 @section('content')
-    <div class="flex flex-col items-center">
 
-        <h2 class=" text-3xl font-semibold mb-8">{{ $product->title }}</h2>
+        @php
+            $ingredientsArray = explode(';', $product->ingredients);
+            $firtsPart = array_slice($ingredientsArray, 0, ceil(count($ingredientsArray) / 2));
+            $secondPart = array_slice($ingredientsArray,  ceil(count($ingredientsArray) / 2));
+            
+            $benefitsArray = explode(';', $product->benefits);
+            $firtsPartBenefits = array_slice($benefitsArray, 0, ceil(count($benefitsArray) / 2));
+            $secondPartBenefits = array_slice($benefitsArray,  ceil(count($benefitsArray) / 2));
 
-        <figure>
-            <img src="/img/products/{{$product->image}}/{{$product->image}}2.webp" alt="">
+            $color = [
+                "led" => 'bg-gradient-to-r from-rose-200 from- via-rose-100 via- to-rose-200 to-',
+                'avi' => 'bg-gradient-to-r from-pink-200 from- via-pink-100 via- to-pink-200 to-',
+                'kle' => 'bg-gradient-to-r from-orange-200 from- via-orange-100 via- to-orange-200 to-',
+                'wu' => 'bg-gradient-to-r from-green-200 from- via-green-100 via- to-green-200 to-',
+                'alc' => 'bg-gradient-to-r from-yellow-100 from- via-yellow-50 via- to-yellow-100 to-',
+                'wudtx' => 'bg-gradient-to-r from-yellow-200 from- via-yellow-100 via- to-yellow-200 to-',
+                'wumix' => 'bg-gradient-to-r from-lime-200 from- via-lime-100 via- to-lime-200 to-',
+                'led2' => 'bg-gradient-to-r from-yellow-200 from- via-yellow-100 via- to-yellow-200 to-',
+                'red' => 'bg-gradient-to-r from-red-200 from- via-red-100 via- to-red-200 to-'
+            ]
+      @endphp
+
+    <div class="flex flex-col items-center pb-14  {{ $color[$product->image] }}">
+
+      
+
+        <figure class="mt-10">
+            <img class="" src="/img/products/{{$product->image}}/{{$product->image}}2.webp" alt="">
         </figure>
 
-        <div class=" w-2/5 my-10  text-center text-xl ">
+        <h2 class=" text-3xl font-semibold mb-8 mt-4">{{ $product->title }}</h2>
+
+        <div class=" w-2/5 my-10  text-center text-xl flex flex-col gap-6">
 
 
             {!! $product->description !!}
-
-
+               
         </div>
 
         <h2 class="my-10 text-2xl font-semibold">Beficios</h2>
 
         <div class="flex items-center ">
             <ul>
-                <li class=" border border-black p-2 rounded-xl my-3 shadow-md shadow-yellow-200 hover:scale-110">
-                    Poderoso Antioxidante
-                </li>
-                <li class=" border border-black p-2 rounded-xl my-3 shadow-md shadow-yellow-200 hover:scale-110">
-                    Previene la anemia
-                </li>
-                <li class=" border border-black p-2 rounded-xl my-3 shadow-md shadow-yellow-200 hover:scale-110">
-                    Reduce la precion cardiaca
-                </li>
+                @foreach ($firtsPartBenefits as $listItem)
+                     <li class=" border border-black p-2 rounded-xl my-3 shadow-md shadow-yellow-200 hover:scale-110">{{ $listItem }}</li>
+                 @endforeach
             </ul>
-            <figure>
+
+            <figure class="mx-10">
                 <img src="/img/products/{{$product->image}}/{{$product->image}}3.webp" alt="">
             </figure>
+
             <ul>
-                <li class=" border border-black p-2 rounded-xl my-3 shadow-md  shadow-yellow-200 hover:scale-110">
-                    Poderoso Antioxidante
-                </li>
-                <li class=" border border-black p-2 rounded-xl my-3 shadow-md shadow-yellow-200 hover:scale-110">
-                    Previene la anemia
-                </li>
-                <li class=" border border-black p-2 rounded-xl my-3 shadow-md shadow-yellow-200 hover:scale-110">
-                    Reduce la precion cardiaca
-                </li>
+                 @foreach ($secondPartBenefits as $listItem1)
+                     <li class=" border border-black p-2 rounded-xl my-3 shadow-md  shadow-yellow-200 hover:scale-110">{{ $listItem1}}</li>
+                 @endforeach
             </ul>
         </div>
         <h2 class="my-10 text-2xl font-semibold">Ingredientes</h2>
         <div class="flex items-center">
             <ul>
-                <li>
-                    Poderoso Antioxidante
-                </li>
-                <li>
-                    Previene la anemia
-                </li>
-                <li>
-                    Reduce la precion cardiaca
-                </li>
+                @foreach ($firtsPart as $listItem)
+                  <li class=" border border-black p-2 rounded-xl my-3 shadow-md shadow-yellow-200 hover:scale-110">{{ $listItem }}</li>
+                 @endforeach
             </ul>
-            <figure>
-                <img src="/img/products/{{$product->image}}/{{$product->image}}4.webp" alt="">
+            <figure class=" mx-20">
+                <img class="w-[350px] h-[650px]" src="/img/products/{{$product->image}}/{{$product->image}}4.webp" alt="">
             </figure>
             <ul>
-                <li>
-                    Poderoso Antioxidante
-                </li>
-                <li>
-                    Previene la anemia
-                </li>
-                <li>
-                    Reduce la precion cardiaca
-                </li>
+                @foreach ($secondPart as $listItem1)
+                     <li class=" border border-black p-2 rounded-xl my-3 shadow-md  shadow-yellow-200 hover:scale-110">{{ $listItem1}}</li>
+                 @endforeach
             </ul>
         </div>
 
-        <button type="button"
-            class="bg-white text-center w-48 rounded-2xl h-14 relative text-black text-xl font-semibold border-4 border-white group mt-4">
+        <a href="https://wa.me/593962866166?text=Saludos necesito infomración del producto {{ $product->title }}" target="_blank">
+        <button type="button"  
+            class="bg-white text-center w-48 rounded-2xl h-14 relative text-black text-xl font-semibold border-4 border-white group mt-20">
             <div
                 class="bg-green-400 rounded-xl h-12 w-1/4 grid place-items-center absolute left-0 top-0 group-hover:w-full z-10 duration-500">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
@@ -99,6 +102,7 @@
             </div>
             <p class="translate-x-4">Watshapp</p>
         </button>
+        </a>
 
 
 
