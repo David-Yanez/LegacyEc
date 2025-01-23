@@ -7,3 +7,25 @@
         animation-play-state: paused;
     }
 }
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+
+  @keyframes flip-up {
+    0% { transform: rotateX(90deg) }
+    100% { transform: rotateX(0) }
+  }
+
+  .flip-up{
+    animation: flip-up 2s ease-in-out ease both;
+  } 
+
+  

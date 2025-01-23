@@ -32,21 +32,21 @@
             <img class="" src="/img/products/{{$product->image}}/{{$product->image}}2.webp" alt="">
         </figure>
 
-        <h2 class=" text-3xl font-semibold mb-8 mt-4">{{ $product->title }}</h2>
+        <h2 class=" text-3xl font-semibold text-center mb-8 mt-4">{{ $product->title }}</h2>
 
-        <div class=" w-2/5 my-10  text-center text-xl flex flex-col gap-6">
+        <div class=" md:w-2/5 w-4/5 md:my-10  my-5 text-base   text-center md:text-xl flex flex-col gap-6">
 
 
             {!! $product->description !!}
                
         </div>
 
-        <h2 class="my-10 text-2xl font-semibold">Beficios</h2>
+        <h2 class="my-10 text-2xl md:text-3xl font-semibold">Beficios</h2>
 
-        <div class="flex items-center ">
-            <ul>
+        <div class="flex    md:flex-row  flex-col  items-center ">
+            <ul class=" px-4 md:px-0">
                 @foreach ($firtsPartBenefits as $listItem)
-                     <li class=" border border-black p-2 rounded-xl my-3 shadow-md shadow-yellow-200 hover:scale-110">{{ $listItem }}</li>
+                     <li class=" md:p-2  p-0  md:my-3 my-1   hover:scale-110 flex md:gap-4 gap-2 "> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg> <p class=" text-sm md:text-base">{{ $listItem }}</p></li>
                  @endforeach
             </ul>
 
@@ -56,30 +56,31 @@
 
             <ul>
                  @foreach ($secondPartBenefits as $listItem1)
-                     <li class=" border border-black p-2 rounded-xl my-3 shadow-md  shadow-yellow-200 hover:scale-110">{{ $listItem1}}</li>
+                     <li class="  md:p-2  p-0  md:my-3 my-1  hover:scale-110 flex md:gap-4 gap-2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg> <p class=" text-sm md:text-base">{{ $listItem1}}</p></li>
                  @endforeach
             </ul>
         </div>
-        <h2 class="my-10 text-2xl font-semibold">Ingredientes</h2>
-        <div class="flex items-center">
+        <h2 class="my-10 text-2xl md:text-3xl font-semibold">Ingredientes</h2>
+
+        <div class="flex md:flex-row flex-col items-center">
             <ul>
                 @foreach ($firtsPart as $listItem)
-                  <li class=" border border-black p-2 rounded-xl my-3 shadow-md shadow-yellow-200 hover:scale-110">{{ $listItem }}</li>
+                  <li class="  md:p-2  p-0   md:my-3 my-1 hover:scale-110 flex md:gap-4 gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg> <p class=" text-sm md:text-base">{{ $listItem }}</p></li>
                  @endforeach
             </ul>
             <figure class=" mx-20">
-                <img class="w-[350px] h-[650px]" src="/img/products/{{$product->image}}/{{$product->image}}4.webp" alt="">
+                <img class="md:w-[350px] md:h-[650px] h-60 w-40 md:my-0 my-2" src="/img/products/{{$product->image}}/{{$product->image}}4.webp" alt="">
             </figure>
             <ul>
                 @foreach ($secondPart as $listItem1)
-                     <li class=" border border-black p-2 rounded-xl my-3 shadow-md  shadow-yellow-200 hover:scale-110">{{ $listItem1}}</li>
+                     <li class=" md:p-2  p-0   md:my-3 my-1 hover:scale-110 flex md:gap-4 gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg> <p class=" text-sm md:text-base">{{ $listItem1}}</p> </li>
                  @endforeach
             </ul>
         </div>
 
         <a href="https://wa.me/593962866166?text=Saludos necesito infomración del producto {{ $product->title }}" target="_blank">
         <button type="button"  
-            class="bg-white text-center w-48 rounded-2xl h-14 relative text-black text-xl font-semibold border-4 border-white group mt-20">
+            class="bg-white text-center w-48 rounded-2xl h-14 relative text-black text-xl font-semibold border-4 border-white group md:mt-20 mt-10">
             <div
                 class="bg-green-400 rounded-xl h-12 w-1/4 grid place-items-center absolute left-0 top-0 group-hover:w-full z-10 duration-500">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">

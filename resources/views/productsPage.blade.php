@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class=" flex flex-wrap gap-20 h-auto mt-20 justify-center">
+    <div class=" flex flex-wrap gap-20 h-auto mt-20 justify-center bg-primary">
 
    
      
@@ -30,7 +30,7 @@
             <div class="p-6 pt-0 flex gap-14">
              
                 <a href="{{route('productPage', $product->slug )}}">
-                  <button data-ripple-light="true" type="button" class="select-none opacity-0 group-hover:opacity-100 rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                  <button data-ripple-light="true" type="button" class="select-none md:opacity-0 md:group-hover:opacity-100 opacity-100 rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                        Ver mas
                   </button>
                 </a> 

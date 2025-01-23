@@ -3,16 +3,16 @@
 @section('content')
 
 <div>
-    <figure>
-        <img class=" h-[550px] w-full" src="/img/productosEC.webp" alt="Slider legacy">
+    <figure class="mt-4 md:mt-0 ">
+        <img class=" md:h-[550px] h-60 w-full rounded-lg" src="/img/productosEC.webp" alt="Slider legacy">
     </figure>
 
-    <div class="flex mt-20 items-center">
-            <p class=" w-2/5  text-5xl text-center font-medium">
+    <div class="flex flex-col md:flex-row md:mt-20 mt-10  items-center">
+            <p class=" md:w-2/5 w-5/5 md:text-5xl text-xl md:text-center font-medium">
                 ¡Únete a nuestro equipo Legacy Global Ecuador y transforma tu futuro con grandes oportunidades de ingresos! 
             </p>
             
-            <div class=" w-3/5 h-96  ">
+            <div class=" md:w-3/5 w-4/5 mt-10  md:mt-0 h-48 md:h-96   ">
 
                 <div class="relative w-full h-full max-w-4xl mx-auto overflow-hidden">
                     <!-- Carrusel -->
@@ -41,32 +41,34 @@
                   </div>
                 
             </div>   
-
-
     </div>
+        
 
-    <div class="flex mt-20 items-center justify-center">
-        <figure class=" w-3/6  flex justify-center">
-            <img class=" w-96 h-96" src="/img/liderazgo1.webp"  alt="">
-        </figure>
-        <p class=" w-3/6  text-5xl text-center font-medium">
+    <div class="flex   mt-20 items-center justify-center">
+      <figure class=" w-3/6   ">
+        <img class=" w-96 h-96" src="/img/liderazgo1.webp"  alt="">
+    </figure>
+        <p class=" w-3/6 md:text-5xl text-xl   font-medium">
             ¡No dejes pasar esta oportunidad de mejorar tu calidad de vida y la de los demás, mientras generas ganancias desde casa!
         </p>
+  
     </div>
 
-    <div class="flex mt-20 items-center">
-        <p class=" w-3/6  text-4xl text-center font-medium">
+
+
+    <div class="flex md:mt-20 mt-10  md:flex-row  flex-col items-center">
+        <p class=" md:w-3/6 w-6/6  text-xl text-center  md:text-4xl font-medium text-wrap">
           Contamos con 9 productos de nutrición con resultados
           espectaculares consumidos a nivel nacional e internacional con ventas
           mayores a 20 millones de dólares por año. La proyección al
           2025 es de 12 productos y más de 40 millones en ventas anuales.
         </p>
-        <figure class=" w-3/6  flex justify-center">
-            <img class=" w-96 h-96" src="/img/8produ.webp"  alt="">
+        <figure class=" md:w-3/6 w-3/6 flex justify-center  md:mt-0 mt-4   ml-4 mb-4  h-auto">
+            <img class=" w-52  h-52  md:w-96 md:h-96   " src="/img/8produ.webp"  alt="">
         </figure>
     </div>
     <div class="flex justify-center">
-      <figure class=" w-[850px] mt-20   ">
+      <figure class=" w-[850px] md:my-20 my-10   ">
         <img class="w-full rounded-3xl" src="/img/bonos1.webp" alt="">
       </figure>
     </div>

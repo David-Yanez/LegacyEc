@@ -2,6 +2,7 @@
 @extends('layout')
 
 @section('content')
+<div class=" bg-yellow-100">
     <div class=" flex flex-col md:flex-row  items-center  bg-primary ">
         <div class=" flex flex-col gap-4 items-center">
             <h1 class=" md:mt-14 mt-8 md:text-6xl text-3xl font-bold text-center">Productos Naturales Legacy</h1>
@@ -17,8 +18,8 @@
             
 
         </div>
-        <figure class="flex justify-center">
-            <img class="md:w-[1600px] w-64 p-2 mt-4" src="/img/productosLegacy2.webp" alt="banerLegacy">
+        <figure class="flex justify-center animate-float">
+            <img class="md:w-[1600px]  w-64 p-2 mt-4 " src="/img/productosLegacy2.webp" alt="banerLegacy">
         </figure>
 
     </div>
@@ -26,54 +27,62 @@
       </div>
     
    
-    <section class="bg-white mt-6">
+    <section class="  mt-6">
         <h3 class=" text-3xl md:text-6xl text-center font-bold ">Todos nuestros productos</h2>
         <div>
             @include('infiniteScroll')
         </div>
     </section>
 
-    <article class="flex mt-10 bg-primary justify-between ">
-      <div class="flex flex-col items-center justify-center">
-        <p class="md:text-6xl text-xl text-center font-medium">¡Sé un líder en la industria! </p>
-       <p class="md:text-6xl text-xl md:mt-6 mt-4 text-center font-medium">Únete a nuestro equipo Legacy.</p>
-       <a  href="{{route('aboutPage')}}">
-          <button
-          class="cursor-pointer w-40  md:mt-20 mt-8 bg-secondary rounded-md text-black font-semibold transition duration-300 ease-in-out hover:bg-yellow-400 hover:ring-2 hover:ring-yellow-500 hover:shadow-xl hover:shadow-yellow-500 focus:ring-yellow-400 focus:shadow-yellow-500 px-5 py-2"
-        >
-          Información 
-        </button>
-       </a>
-      
+    <article  >
+      <div class="flex mt-10  justify-between md:p-10 p-3 bg-primary">
+        <div class="flex flex-col items-center justify-center ">
+          <p class="md:text-6xl text-xl text-center font-medium">¡Sé un líder en la industria! </p>
+         <p class="md:text-6xl text-xl md:mt-6 mt-4 text-center font-medium">Únete a nuestro equipo Legacy.</p>
+         <a  href="{{route('aboutPage')}}">
+            <button
+            class="cursor-pointer w-40  md:mt-20 mt-8 bg-secondary rounded-md text-black font-semibold transition duration-300 ease-in-out hover:bg-yellow-400 hover:ring-2 hover:ring-yellow-500 hover:shadow-xl hover:shadow-yellow-500 focus:ring-yellow-400 focus:shadow-yellow-500 px-5 py-2"
+          >
+            Información 
+          </button>
+         </a>
+        
+        </div>
+         
+          <figure class="flex animate-float md:w-[600px] ml-6 md:ml-0 w-auto h-auto  ">
+              <img class="md:w-[600px] w-90 ml-3 md:ml-0 rounded-3xl shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px] " src="/img/centroDistribucion.webp" alt="Imagen distribucion">
+          </figure>
       </div>
-       
-        <figure>
-            <img class="md:w-[600px] rounded-3xl ml-3 md:ml-0 " src="/img/centroDistribucion.webp" alt="Imagen distribucion">
-        </figure>
+      <div class="h-20 bg-primary rounded-bl-[50%_100%] rounded-br-[50%_100%]">
+
     </article>
+    
 
    
-        <section class="flex items-center justify-center ">
-            <figure class=" flex justify-center mt-6 mr-10">
+        <section class="flex items-center justify-center py-4 px-2 ">
+            <figure class="animate-float flex justify-center mt-6 mr-10 bg-white p-6 rounded-2xl shadow-[rgba(0,_0,_0,_0.2)_0px_60px_40px_-7px]">
                 <img class="w-48 md:w-72" src="/img/usoProduct.webp" alt="Uso del producto">
             </figure>
             <div>
-              <p class="text-2xl md:text-6xl text-center my-10 font-semibold">Productos de fácil </p>
-              <p class="text-2xl md:text-6xl text-center my-10 font-semibold"> preparación</p>
+              <p class="text-2xl md:text-6xl text-center md:my-10 font-semibold">Productos de fácil </p>
+              <p class="text-2xl md:text-6xl text-center md:my-10 font-semibold"> preparación</p>
             </div>
            
         </section>
 
-    <section class="text-gray-600 body-font">
-               <div class="flex items-center justify-center">
+    <section class="text-gray-600 body-font bg-primary pt-6">
+               <div class="flex flex-col items-center justify-center">
                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote h-10 w-10 text-secondary mb-4"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
-                 <h3 class="text-3xl md:text-6xl font-semibold text-center text-black my-4 ml-10">Testimonios</h3>
+                 <h3 class="text-3xl md:text-6xl font-semibold text-center text-black  ">Testimonios</h3>
                </div>
             
-            <div class="container px-5 py-10 mx-auto ">
-                <div class="flex gap-5">
-                  <div class="lg:w-1/3 lg:mb-0 mb-6  glass-effect p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                    <div class="h-full text-center flex flex-col items-center">
+            <div class="px-5 py-10  ">
+
+
+                <div class=" flex flex-col md:flex-row ">
+
+                  <div class="md:w-1/3    lg:mb-0 mb-6 bg-primary  glass-effect p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="h-full text-center  flex flex-col items-center">
                       <p class="w-16 h-16 text-2xl bg-amber-400 rounded-full flex items-center justify-center text-white font-bold">
                         M
                       </p>
@@ -84,7 +93,7 @@
                   </div>
 
 
-                  <div class="lg:w-1/3 lg:mb-0 mb-6  glass-effect p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                  <div class="md:w-1/3 lg:mb-0 mb-6   glass-effect p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
                     <div class="h-full text-center flex flex-col items-center">
                       <p class="w-16 h-16 text-2xl bg-amber-400 rounded-full flex items-center justify-center text-white font-bold">
                         P
@@ -96,7 +105,7 @@
                     </div>
                   </div>
                   
-                  <div class="lg:w-1/3 lg:mb-0 mb-6  glass-effect p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                  <div class="md:w-1/3 lg:mb-0 mb-6   glass-effect p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
                     <div class="h-full text-center flex flex-col items-center">
                       <p class="w-16 text-2xl h-16 bg-amber-400 rounded-full flex items-center justify-center text-white font-bold">
                         L
@@ -111,5 +120,5 @@
         </div>
       </section>
 
-   
+  </div>
 @endsection
