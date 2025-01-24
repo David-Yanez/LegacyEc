@@ -32,7 +32,7 @@
             <img class="" src="/img/products/{{$product->image}}/{{$product->image}}2.webp" alt="">
         </figure>
 
-        <h2 class=" text-3xl font-semibold text-center mb-8 mt-4">{{ $product->title }}</h2>
+        <h2 class=" text-3xl md:text-4xl  text-center mb-8 mt-4 font-fontTitle">{{ $product->title }}</h2>
 
         <div class=" md:w-2/5 w-4/5 md:my-10  my-5 text-base   text-center md:text-xl flex flex-col gap-6">
 
@@ -50,7 +50,7 @@
                  @endforeach
             </ul>
 
-            <figure class="mx-10">
+            <figure class="mx-10 animate-float">
                 <img src="/img/products/{{$product->image}}/{{$product->image}}3.webp" alt="">
             </figure>
 
@@ -68,7 +68,7 @@
                   <li class="  md:p-2  p-0   md:my-3 my-1 hover:scale-110 flex md:gap-4 gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg> <p class=" text-sm md:text-base">{{ $listItem }}</p></li>
                  @endforeach
             </ul>
-            <figure class=" mx-20">
+            <figure class=" mx-20 animate-float">
                 <img class="md:w-[350px] md:h-[650px] h-60 w-40 md:my-0 my-2" src="/img/products/{{$product->image}}/{{$product->image}}4.webp" alt="">
             </figure>
             <ul>

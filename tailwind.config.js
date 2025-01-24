@@ -13,6 +13,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                fontTitle: ['Aclonica', 'sans-serif'],
             },
             colors:{
                 "primary": "#D7FEFB",

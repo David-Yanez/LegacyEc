@@ -4,7 +4,7 @@
 
 <div>
     <figure class="mt-4 md:mt-0 ">
-        <img class=" md:h-[550px] h-60 w-full rounded-lg" src="/img/productosEC.webp" alt="Slider legacy">
+        <img class=" md:h-[550px] h-52 w-full rounded-lg" src="/img/productosEC.webp" alt="Slider legacy">
     </figure>
 
     <div class="flex flex-col md:flex-row md:mt-20 mt-10  items-center">

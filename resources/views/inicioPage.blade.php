@@ -5,7 +5,7 @@
 <div class=" bg-yellow-100">
     <div class=" flex flex-col md:flex-row  items-center  bg-primary ">
         <div class=" flex flex-col gap-4 items-center">
-            <h1 class=" md:mt-14 mt-8 md:text-6xl text-3xl font-bold text-center">Productos Naturales Legacy</h1>
+            <h1 class=" md:mt-14 mt-8 md:text-6xl text-3xl font-bold text-center font-fontTitle">Productos Naturales Legacy</h1>
     
             <p class=" md:w-4/6 w-5/6  md:text-xl  ml-8 md:mt-20 mt-4">Legacy te ofrece una variedad de bebidas naturales para cuidar tu cuerpo desde adentro. Nuestras bebidas naturales con colágeno, energía y fórmulas digestivas te ayudarán a alcanzar tus objetivos.</p>
            <a href="{{route('productsPage')}}">
@@ -28,7 +28,7 @@
     
    
     <section class="  mt-6">
-        <h3 class=" text-3xl md:text-6xl text-center font-bold ">Todos nuestros productos</h2>
+        <h3 class=" text-3xl md:text-6xl text-center font-bold  ">Todos nuestros productos</h2>
         <div>
             @include('infiniteScroll')
         </div>
@@ -64,8 +64,8 @@
                 <img class="w-48 md:w-72" src="/img/usoProduct.webp" alt="Uso del producto">
             </figure>
             <div>
-              <p class="text-2xl md:text-6xl text-center md:my-10 font-semibold">Productos de fácil </p>
-              <p class="text-2xl md:text-6xl text-center md:my-10 font-semibold"> preparación</p>
+              <p class="text-2xl md:text-6xl text-center md:my-10 font-semibold ">Productos de fácil </p>
+              <p class="text-2xl md:text-6xl text-center md:my-10 font-semibold "> preparación</p>
             </div>
            
         </section>
